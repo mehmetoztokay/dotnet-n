@@ -23,13 +23,18 @@ public class ProductController : Controller
         return View();
     }
 
-    public IActionResult List()
+    [Route("Product/List/{itemid?}")]
+    public IActionResult List(int? itemid)
     {
-
+        var products = ProductRepository.Products;
+        if (itemid != null)
+        {
+            products = products.Where(p => p.CategoryId == itemid).ToList();
+        }
 
         var productViewModel = new ProductViewModel()
         {
-            Products = ProductRepository.Products
+            Products = products
         };
 
         return View(productViewModel);
