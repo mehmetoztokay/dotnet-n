@@ -21,10 +21,8 @@
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.shopapp.webui.props
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/bundle/shopapp.webui.styles.css
-/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/projectbundle/shopapp.webui.bundle.scp.css
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/shopapp.webui.dll
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/refint/shopapp.webui.dll
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/shopapp.webui.pdb
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/shopapp.webui.genruntimeconfig.cache
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/ref/shopapp.webui.dll
-/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css

@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/projectbundle/shopapp.webui.bundle.scp.css",
-      "PackagePath": "staticwebassets/shopapp.webui.bundle.scp.css"
-    },
-    {
       "Id": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

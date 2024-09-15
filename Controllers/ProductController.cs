@@ -29,12 +29,16 @@ public class ProductController : Controller
             new Product {Name = "Iphone X",  Price = 6000, Description="Muko"},
         };
 
-        var category = new Category() { Name = "Telefonlar", Description = "Telefon kategorisi ya hu" };
+        // var categories = new List<Category>(){
+        //     new Category() { Name = "Telefonlar", Description = "Telefon kategorisi" },
+        //     new Category() { Name = "Bilgisayar", Description = "Bilgisayar kategorisi" },
+        //     new Category() { Name = "Elektronik", Description = "Elektronik kategorisi" },
+        // };
 
 
         var productViewModel = new ProductViewModel()
         {
-            Category = category,
+            // Categories = categories,
             Products = products
         };
 

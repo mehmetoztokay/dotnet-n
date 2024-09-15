@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PcKNUBYfHs5FkCT+ihKhfAHiVXHOuVoBZmsmboFmZL0=",
+  "Hash": "EBS4IdwGc3ajUQH9n133a9XuiWGrTbbInmtq4YxdtAs=",
   "Source": "shopapp.webui",
   "BasePath": "_content/shopapp.webui",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/bundle/shopapp.webui.styles.css",
-      "SourceId": "shopapp.webui",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/bundle/",
-      "BasePath": "_content/shopapp.webui",
-      "RelativePath": "shopapp.webui.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/bundle/shopapp.webui.styles.css"
-    },
-    {
-      "Identity": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/projectbundle/shopapp.webui.bundle.scp.css",
-      "SourceId": "shopapp.webui",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/projectbundle/",
-      "BasePath": "_content/shopapp.webui",
-      "RelativePath": "shopapp.webui.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/scopedcss/projectbundle/shopapp.webui.bundle.scp.css"
-    },
     {
       "Identity": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/wwwroot/css/site.css",
       "SourceId": "shopapp.webui",

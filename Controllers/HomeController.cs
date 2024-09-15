@@ -15,18 +15,33 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        int clock = DateTime.Now.Hour;
-        ViewBag.Greeting = clock > 12 ? "Gunaydinlar" : "Iyi Gunler";
-        ViewBag.User = "Mehmet";
+        var products = new List<Product>() {
+            new Product {Name = "Iphone 8",  Price = 3000, Description="Harika"},
+            new Product {Name = "Iphone X",  Price = 6000, Description="Muko"},
+        };
 
-        return View();
+        // var categories = new List<Category>(){
+        //     new Category() { Name = "Telefonlar", Description = "Telefon kategorisi" },
+        //     new Category() { Name = "Bilgisayar", Description = "Bilgisayar kategorisi" },
+        //     new Category() { Name = "Elektronik", Description = "Elektronik kategorisi" },
+        // };
+
+
+        var productViewModel = new ProductViewModel()
+        {
+            // Categories = categories,
+            Products = products
+        };
+
+        return View(productViewModel);
+
     }
 
-    public IActionResult Privacy()
+    public IActionResult About()
     {
         return View();
-
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

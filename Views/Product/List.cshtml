@@ -1,47 +1,36 @@
 @model ProductViewModel
 
-<!DOCTYPE html>
-<html lang="en">
+@{
+    Layout = "_Layout";
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@{
+    var products = Model.Products;
+    @* var categories = Model.Categories; *@
+}
 
-<body>
-    @await Html.PartialAsync("_navbar")
-    <header>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Shop App</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, in?</p>
-            </div>
-        </div>
-    </header>
+@section MessageBox {
+    <div class="alert alert-warning m-0 text-center">
+        You have a message!
+    </div>
+}
 
-    <main>
-        <div class="container">
-            <div class="row">
-                @foreach (var product in @Model.Products)
-                {
+@section Categories {
+    @await Component.InvokeAsync("Categories")
+}
 
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="https://productimages.hepsiburada.net/s/31/375-375/10352775430194.jpg" alt=""
-                                class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">@product.Name</h5>
-                                <p>@product.Description</p>
-                                <a href="" class="btn btn-primary">Incele</a>
-                            </div>
 
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
-    </main>
-</body>
+@if (products.Count == 0)
+{
+    @await Html.PartialAsync("_noproduct")
+}
+else
+{
+    @foreach (var product in products)
+    {
 
-</html>
+        <div class="col-md-4">
+    @await Html.PartialAsync("_product", product)
+</div>
+    }
+}
