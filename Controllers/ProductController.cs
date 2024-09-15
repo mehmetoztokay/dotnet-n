@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using shopapp.webui.Data;
 using shopapp.webui.Models;
 
 namespace shopapp.webui.Controllers;
@@ -24,31 +25,21 @@ public class ProductController : Controller
 
     public IActionResult List()
     {
-        var products = new List<Product>() {
-            new Product {Name = "Iphone 8",  Price = 3000, Description="Harika"},
-            new Product {Name = "Iphone X",  Price = 6000, Description="Muko"},
-        };
-
-        // var categories = new List<Category>(){
-        //     new Category() { Name = "Telefonlar", Description = "Telefon kategorisi" },
-        //     new Category() { Name = "Bilgisayar", Description = "Bilgisayar kategorisi" },
-        //     new Category() { Name = "Elektronik", Description = "Elektronik kategorisi" },
-        // };
 
 
         var productViewModel = new ProductViewModel()
         {
-            // Categories = categories,
-            Products = products
+            Products = ProductRepository.Products
         };
 
         return View(productViewModel);
 
     }
 
-    public IActionResult Details()
+    [Route("Product/Details/{itemid}")]
+    public IActionResult Details(int itemid)
     {
-        Product p = new Product() { Name = "Samsung S6", Price = 3000, Description = "Fena degil" };
+        Product p = ProductRepository.GetProductById(itemid);
         return View(p);
 
     }

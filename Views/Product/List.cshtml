@@ -6,7 +6,6 @@
 
 @{
     var products = Model.Products;
-    @* var categories = Model.Categories; *@
 }
 
 @section MessageBox {
@@ -18,7 +17,6 @@
 @section Categories {
     @await Component.InvokeAsync("Categories")
 }
-
 
 @if (products.Count == 0)
 {
