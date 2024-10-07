@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("shopapp.webui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a20f087bb2ae5fc6955ae6a31aa81c5e87d14da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+385e93b30e7837f39790629b241508a817b12de0")]
 [assembly: System.Reflection.AssemblyProductAttribute("shopapp.webui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("shopapp.webui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

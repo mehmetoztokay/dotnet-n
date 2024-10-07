@@ -15,7 +15,7 @@ namespace shopapp.webui.Data
                 new Product {ProductId = 4, Name = "Iphone 11",  Price = 3000, Description="Harika 11", ImageUrl = "1.jpg", CategoryId = 1},
                 new Product {ProductId = 5, Name = "Lenovo 1",  Price = 3000, Description="Harika leno", ImageUrl = "1.jpg", CategoryId = 2},
                 new Product {ProductId = 6, Name = "Lenovo 2",  Price = 4000, Description="Harika leno", ImageUrl = "1.jpg", CategoryId = 2},
-                new Product {ProductId = 7, Name = "Lenovo 3",  Price = 5000, Description="Harika leno", ImageUrl = "1.jpg", CategoryId = 2},
+                new Product {ProductId = 7, Name = "Lenovo 3",  Price = 5000, Description="Harika leno pc", ImageUrl = "1.jpg", CategoryId = 2},
             };
         }
 

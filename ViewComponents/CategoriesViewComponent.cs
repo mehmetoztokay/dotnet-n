@@ -8,6 +8,11 @@ namespace shopapp.webui.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
+            if (RouteData.Values["action"].ToString() == "List")
+            {
+                ViewBag.SelectedCategory = RouteData?.Values["itemid"];
+            }
+
             var categories = CategoryRepository.Categories;
 
             return View(categories);
