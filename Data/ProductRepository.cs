@@ -38,5 +38,20 @@ namespace shopapp.webui.Data
             return _products.FirstOrDefault(p => p.ProductId == productId);
         }
 
+        public static void EditProduct(Product p)
+        {
+            Product product = GetProductById(p.ProductId);
+
+            if (product != null)
+            {
+                product.Name = p.Name;
+                product.Price = p.Price;
+                product.Description = p.Description;
+                product.ImageUrl = p.ImageUrl;
+                product.CategoryId = p.CategoryId;
+                product.IsApproved = p.IsApproved;
+            }
+        }
+
     }
 }

@@ -1,7 +1,8 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using shopapp.webui.Data;
 using shopapp.webui.Models;
+using System.Diagnostics;
 
 namespace shopapp.webui.Controllers;
 
@@ -82,6 +83,25 @@ public class ProductController : Controller
     {
         ProductRepository.AddProduct(p);
         return RedirectToAction("list");
+    }
+
+    [HttpGet]
+    [Route("product/edit")]
+    public IActionResult Edit(int id)
+    {
+        ViewBag.Categories = new SelectList(CategoryRepository.Categories, "Categories");
+
+        return View(ProductRepository.GetProductById(id));
+
+    }
+
+    [HttpPost]
+    [Route("product/edit")]
+    public IActionResult Edit(Product p)
+    {
+        ProductRepository.EditProduct(p);
+        return RedirectToAction("list");
+
     }
 
 
