@@ -53,5 +53,15 @@ namespace shopapp.webui.Data
             }
         }
 
+        public static void DeleteProduct(Product p)
+        {
+            var product = GetProductById(p.ProductId);
+
+            if (product != null)
+            {
+                _products.Remove(product);
+            }
+        }
+
     }
 }

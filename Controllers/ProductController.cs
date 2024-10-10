@@ -112,6 +112,14 @@ public class ProductController : Controller
 
     }
 
+    [HttpPost]
+    public IActionResult Delete(Product p)
+    {
+        ProductRepository.DeleteProduct(p);
+        return RedirectToAction("list");
+
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
