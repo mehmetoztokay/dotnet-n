@@ -74,15 +74,23 @@ public class ProductController : Controller
     public IActionResult Create()
     {
 
-        return View();
+        return View(new Product());
+        // Diyelim ki create sayfasini actik orada eger product.name'i bulamazsa sorun olur o yuzden bos bir product yolladik
     }
 
     [HttpPost]
     [Route("product/create")]
     public IActionResult Create(Product p)
     {
-        ProductRepository.AddProduct(p);
-        return RedirectToAction("list");
+        if (ModelState.IsValid)
+        // ModelState ile olusturulan obj'nin tamamiyla valid oldugunu kontrol edebiliyoruz.
+        {
+            ProductRepository.AddProduct(p);
+            return RedirectToAction("list");
+
+        }
+        return View(p);
+
     }
 
     [HttpGet]
