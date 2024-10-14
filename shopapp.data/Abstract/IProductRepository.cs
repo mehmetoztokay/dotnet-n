@@ -1,14 +1,13 @@
+using shopapp.data.Abstract;
 using shopapp.entity;
 
 namespace shopapp.data.Abstract
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
-        Product GetById(int id);
-        List<Product> GetAll();
-        void Create(Product entity);
-        void Update(Product entity);
-        void Detele(int id);
+        // Otomatik olarak buraya generik olarak gelmis olacak zaten.
+        // Biz generic'ten haric sadece product'a ozel olanlari da buraya ekleyebiliriz.
 
+        List<Product> GetPopularProducts();
     }
 }
