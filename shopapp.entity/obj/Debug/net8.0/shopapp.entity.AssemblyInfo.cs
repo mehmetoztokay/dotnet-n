@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("shopapp.webui")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("shopapp.entity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3175733abf8217f10e184e62503f3fdcf7ba248")]
-[assembly: System.Reflection.AssemblyProductAttribute("shopapp.webui")]
-[assembly: System.Reflection.AssemblyTitleAttribute("shopapp.webui")]
+[assembly: System.Reflection.AssemblyProductAttribute("shopapp.entity")]
+[assembly: System.Reflection.AssemblyTitleAttribute("shopapp.entity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.

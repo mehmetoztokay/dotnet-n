@@ -1,0 +1,12 @@
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/bin/Debug/net8.0/shopapp.entity.deps.json
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/bin/Debug/net8.0/shopapp.entity.dll
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/bin/Debug/net8.0/shopapp.entity.pdb
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.AssemblyInfoInputs.cache
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.AssemblyInfo.cs
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.csproj.CoreCompileInputs.cache
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.sourcelink.json
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.dll
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/refint/shopapp.entity.dll
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.pdb
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/ref/shopapp.entity.dll

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "shopapp.entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/shopapp.entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/shopapp.entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "shopapp.entity/1.0.0": {
+      "type": "project",
+      "path": "../shopapp.entity/shopapp.entity.csproj",
+      "msbuildProject": "../shopapp.entity/shopapp.entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "shopapp.entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/mehmetoztokay/.nuget/packages/": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/shopapp.webui.csproj",
-      "projectName": "shopapp.webui",
-      "projectPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/shopapp.webui.csproj",
+      "projectUniqueName": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.data/shopapp.data.csproj",
+      "projectName": "shopapp.data",
+      "projectPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.data/shopapp.data.csproj",
       "packagesPath": "/Users/mehmetoztokay/.nuget/packages/",
-      "outputPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/",
+      "outputPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mehmetoztokay/.nuget/NuGet/NuGet.Config"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/shopapp.entity.csproj": {
+              "projectPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/shopapp.entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -60,9 +83,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
