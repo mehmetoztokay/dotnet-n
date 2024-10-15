@@ -5,7 +5,7 @@ namespace shopapp.data.Abstract
 {
     public interface ICategoryRepository : IRepository<Category>
     {
-        List<Categort> GetPopularCategories();
+        List<Category> GetPopularCategories();
 
     }
 }
