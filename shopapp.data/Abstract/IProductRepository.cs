@@ -1,4 +1,3 @@
-using shopapp.data.Abstract;
 using shopapp.entity;
 
 namespace shopapp.data.Abstract
@@ -9,5 +8,7 @@ namespace shopapp.data.Abstract
         // Biz generic'ten haric sadece product'a ozel olanlari da buraya ekleyebiliriz.
 
         List<Product> GetPopularProducts();
+
+        List<Product> GetPopular5Products();
     }
 }

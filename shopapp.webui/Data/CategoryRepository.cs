@@ -1,22 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using shopapp.webui.Models;
 
 namespace shopapp.webui.Data
 {
     public class CategoryRepository
     {
-        private static List<Category> _categories = null;
+        private static List<Category> _categories = Array.Empty<Category>().ToList();
 
         static CategoryRepository()
         {
-            _categories = new List<Category>()
+            _categories = new()
             {
-                new Category() {CategoryId = 1, Name = "Telefonlar", Description = "Telefon kategorisi" },
-                new Category() { CategoryId = 2,Name = "Bilgisayar", Description = "Bilgisayar kategorisi" },
-                new Category() { CategoryId = 3,Name = "Elektronik", Description = "Elektronik kategorisi" },
+                new () {CategoryId = 1, Name = "Telefonlar", Description = "Telefon kategorisi" },
+                new() { CategoryId = 2,Name = "Bilgisayar", Description = "Bilgisayar kategorisi" },
+                new() { CategoryId = 3,Name = "Elektronik", Description = "Elektronik kategorisi" },
             };
         }
 
@@ -28,15 +24,18 @@ namespace shopapp.webui.Data
             }
         }
 
+        public object GetCategories() => (_categories);
+
         public static void AddCategory(Category category)
         {
             _categories.Add(category);
         }
 
-        public static Category GetCategoryById(int categoryId)
+        public static Category? GetCategoryById(int categoryId)
         {
-            return _categories.FirstOrDefault(c => c.CategoryId == categoryId);
-        }
+            var category = _categories.FirstOrDefault(c => c.CategoryId == categoryId);
 
+            return category;
+        }
     }
 }

@@ -10,6 +10,5 @@ namespace shopapp.entity
         public bool IsApproved { get; set; } = false;
         public int CategoryId { get; set; }
         public List<ProductCategory> ProductCategory { get; set; }
-
     }
 }

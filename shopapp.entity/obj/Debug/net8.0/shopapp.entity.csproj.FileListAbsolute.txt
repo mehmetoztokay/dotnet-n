@@ -10,3 +10,15 @@
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/refint/shopapp.entity.dll
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/shopapp.entity.pdb
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/Debug/net8.0/ref/shopapp.entity.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\bin\Debug\net8.0\shopapp.entity.deps.json
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\bin\Debug\net8.0\shopapp.entity.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\bin\Debug\net8.0\shopapp.entity.pdb
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.AssemblyInfoInputs.cache
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.AssemblyInfo.cs
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.csproj.CoreCompileInputs.cache
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.sourcelink.json
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\refint\shopapp.entity.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\shopapp.entity.pdb
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.entity\obj\Debug\net8.0\ref\shopapp.entity.dll

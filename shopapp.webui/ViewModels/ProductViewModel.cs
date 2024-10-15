@@ -1,6 +1,6 @@
 using shopapp.webui.Models;
 
-class ProductViewModel
+internal class ProductViewModel
 {
     public List<Product> Products { get; set; }
 }

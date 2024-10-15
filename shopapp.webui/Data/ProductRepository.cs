@@ -5,6 +5,7 @@ namespace shopapp.webui.Data
     public static class ProductRepository
     {
         private static List<Product> _products = null;
+
         static ProductRepository()
         {
             _products = new List<Product>()
@@ -30,7 +31,6 @@ namespace shopapp.webui.Data
         public static void AddProduct(Product product)
         {
             _products.Add(product);
-
         }
 
         public static Product GetProductById(int productId)
@@ -62,6 +62,5 @@ namespace shopapp.webui.Data
                 _products.Remove(product);
             }
         }
-
     }
 }

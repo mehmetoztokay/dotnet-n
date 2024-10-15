@@ -14,3 +14,12 @@
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.data/obj/Debug/net8.0/refint/shopapp.data.dll
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.data/obj/Debug/net8.0/shopapp.data.pdb
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.data/obj/Debug/net8.0/ref/shopapp.data.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.csproj.AssemblyReference.cache
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.AssemblyInfoInputs.cache
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.AssemblyInfo.cs
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.csproj.CoreCompileInputs.cache
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.sourcelink.json
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\refint\shopapp.data.dll
+C:\plans\education\software\dotnet\mvc\shopapp\shopapp.data\obj\Debug\net8.0\shopapp.data.pdb

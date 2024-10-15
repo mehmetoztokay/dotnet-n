@@ -27,14 +27,11 @@ public class ProductController : Controller
     [Route("Product/List/{itemid?}")]
     public IActionResult List(int? itemid)
     {
-
         // 1. QueryString parametre olarak string? q dersek ornegin, altta direkt ulasabiliriz ama daha farkli yollari da var:
         // Console.WriteLine(q);
 
         // 2. Diger yol
         // Console.WriteLine(Request.Query["q"]);
-
-
 
         var products = ProductRepository.Products;
 
@@ -56,24 +53,19 @@ public class ProductController : Controller
         };
 
         return View(productViewModel);
-
     }
 
     [Route("Product/Details/{itemid}")]
     public IActionResult Details(int itemid)
     {
-
         Product p = ProductRepository.GetProductById(itemid);
         return View(p);
-
     }
-
 
     [HttpGet]
     [Route("product/create")] // Burada Route ile GET isteğini ayırdım
     public IActionResult Create()
     {
-
         return View(new Product());
         // Diyelim ki create sayfasini actik orada eger product.name'i bulamazsa sorun olur o yuzden bos bir product yolladik
     }
@@ -87,10 +79,8 @@ public class ProductController : Controller
         {
             ProductRepository.AddProduct(p);
             return RedirectToAction("list");
-
         }
         return View(p);
-
     }
 
     [HttpGet]
@@ -100,7 +90,6 @@ public class ProductController : Controller
         ViewBag.Categories = new SelectList(CategoryRepository.Categories, "Categories");
 
         return View(ProductRepository.GetProductById(id));
-
     }
 
     [HttpPost]
@@ -109,7 +98,6 @@ public class ProductController : Controller
     {
         ProductRepository.EditProduct(p);
         return RedirectToAction("list");
-
     }
 
     [HttpPost]
@@ -117,9 +105,7 @@ public class ProductController : Controller
     {
         ProductRepository.DeleteProduct(p);
         return RedirectToAction("list");
-
     }
-
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

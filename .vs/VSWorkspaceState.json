@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\shopapp.data",
-    "\\shopapp.data\\Abstract",
-    "\\shopapp.data\\Concrete",
-    "\\shopapp.data\\Concrete\\EFCore"
+    "\\shopapp.entity",
+    "\\shopapp.webui"
   ],
-  "SelectedNode": "\\shopapp.data\\Abstract\\ICategoryRepository.cs",
+  "SelectedNode": "\\shopapp.webui\\shopapp.webui.sln",
   "PreviewInSolutionExplorer": false
 }

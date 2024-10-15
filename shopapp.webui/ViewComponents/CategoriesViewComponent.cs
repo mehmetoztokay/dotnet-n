@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using shopapp.webui.Data;
-using shopapp.webui.Models;
 
 namespace shopapp.webui.ViewComponents
 {
@@ -16,7 +15,6 @@ namespace shopapp.webui.ViewComponents
             var categories = CategoryRepository.Categories;
 
             return View(categories);
-
         }
     }
 }
