@@ -9,6 +9,5 @@ namespace shopapp.data.Abstract
 
         List<Product> GetPopularProducts();
 
-        List<Product> GetPopular5Products();
     }
 }

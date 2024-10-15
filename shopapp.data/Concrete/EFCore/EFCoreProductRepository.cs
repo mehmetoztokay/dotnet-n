@@ -3,49 +3,14 @@ using shopapp.entity;
 
 namespace shopapp.data.Concrete.EFCore
 {
-    public class EFCoreProductRepository : IProductRepository
+    public class EFCoreProductRepository : EFCoreGenericRepository<Product, ShopContext>, IProductRepository
+    // Biz artik instance almis olduk.
+    // TEntity olarak product'i yolladik, context olarak shopcontext'i yolladik
+    // Ayrica eger product'a ozel metod varsa onu da getirsin diye IProductRepository'i de cagirdik cunku mesela ekstra getPopularProducts diye bir sey gelebilir.
     {
-        private readonly ShopContext _context;
-
-        public EFCoreProductRepository(ShopContext context)
-        {
-            _context = context;
-        }
-
-        public void Create(Product entity)
-        {
-            _context.Products.Add(entity);
-            _context.SaveChanges();
-        }
-
-        public void Detele(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Product> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Product GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Product> GetPopular5Products()
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Product> GetPopularProducts()
         {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Product entity)
-        {
-            throw new NotImplementedException();
+            return new();
         }
     }
 }

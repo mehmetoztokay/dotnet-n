@@ -10,6 +10,6 @@ namespace shopapp.data.Abstract
 
         void Update(T entity);
 
-        void Detele(int id);
+        void Detele(T entity);
     }
 }
