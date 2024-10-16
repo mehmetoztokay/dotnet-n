@@ -6,8 +6,9 @@ namespace shopapp.data.Concrete.EFCore;
 
 public class EFCoreCategoryRepository : EFCoreGenericRepository<Category, ShopContext>, ICategoryRepository
 {
-    public List<Category> GetPopularCategories()
+
+    public void HideCategory(Category category)
     {
-        return new();
+        throw new NotImplementedException();
     }
 }

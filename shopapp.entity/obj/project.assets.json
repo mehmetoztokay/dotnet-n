@@ -8,27 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Mehmet\\.nuget\\packages\\": {}
+    "/Users/mehmetoztokay/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\plans\\education\\software\\dotnet\\mvc\\shopapp\\shopapp.entity\\shopapp.entity.csproj",
+      "projectUniqueName": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/shopapp.entity.csproj",
       "projectName": "shopapp.entity",
-      "projectPath": "C:\\plans\\education\\software\\dotnet\\mvc\\shopapp\\shopapp.entity\\shopapp.entity.csproj",
-      "packagesPath": "C:\\Users\\Mehmet\\.nuget\\packages\\",
-      "outputPath": "C:\\plans\\education\\software\\dotnet\\mvc\\shopapp\\shopapp.entity\\obj\\",
+      "projectPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/shopapp.entity.csproj",
+      "packagesPath": "/Users/mehmetoztokay/.nuget/packages/",
+      "outputPath": "/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.entity/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mehmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mehmetoztokay/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
