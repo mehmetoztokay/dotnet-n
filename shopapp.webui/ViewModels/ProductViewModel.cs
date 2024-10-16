@@ -1,4 +1,4 @@
-using shopapp.webui.Models;
+using shopapp.entity;
 
 internal class ProductViewModel
 {

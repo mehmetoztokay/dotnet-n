@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using shopapp.webui.Data;
+// using shopapp.webui.Data;
 
 namespace shopapp.webui.ViewComponents
 {
@@ -7,14 +7,16 @@ namespace shopapp.webui.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            if (RouteData.Values["action"].ToString() == "List")
-            {
-                ViewBag.SelectedCategory = RouteData?.Values["itemid"];
-            }
+            // if (RouteData.Values["action"].ToString() == "List")
+            // {
+            //     ViewBag.SelectedCategory = RouteData?.Values["itemid"];
+            // }
 
-            var categories = CategoryRepository.Categories;
+            // var categories = CategoryRepository.Categories;
 
-            return View(categories);
+            // return View(categories);
+
+            return View();
         }
     }
 }

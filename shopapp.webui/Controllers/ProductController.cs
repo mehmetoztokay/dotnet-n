@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using shopapp.webui.Data;
-using shopapp.webui.Models;
+using shopapp.entity;
 using System.Diagnostics;
+using shopapp.webui.Models;
+
 
 namespace shopapp.webui.Controllers;
 
@@ -33,33 +33,33 @@ public class ProductController : Controller
         // 2. Diger yol
         // Console.WriteLine(Request.Query["q"]);
 
-        var products = ProductRepository.Products;
+        // var products = ProductRepository.Products;
 
-        var q = Request.Query["q"].ToString();
+        // var q = Request.Query["q"].ToString();
 
-        if (!string.IsNullOrEmpty(q))
-        {
-            products = products.Where(p => p.Name.ToLower().Contains(q) || p.Description.ToLower().Contains(q)).ToList();
-        }
+        // if (!string.IsNullOrEmpty(q))
+        // {
+        //     products = products.Where(p => p.Name.ToLower().Contains(q) || p.Description.ToLower().Contains(q)).ToList();
+        // }
 
-        if (itemid != null)
-        {
-            products = products.Where(p => p.CategoryId == itemid).ToList();
-        }
+        // if (itemid != null)
+        // {
+        //     products = products.Where(p => p.CategoryId == itemid).ToList();
+        // }
 
-        var productViewModel = new ProductViewModel()
-        {
-            Products = products
-        };
+        // var productViewModel = new ProductViewModel()
+        // {
+        //     Products = products
+        // };
 
-        return View(productViewModel);
+        return View();
     }
 
     [Route("Product/Details/{itemid}")]
     public IActionResult Details(int itemid)
     {
-        Product p = ProductRepository.GetProductById(itemid);
-        return View(p);
+        // Product p = ProductRepository.GetProductById(itemid);
+        return View();
     }
 
     [HttpGet]
@@ -74,36 +74,38 @@ public class ProductController : Controller
     [Route("product/create")]
     public IActionResult Create(Product p)
     {
-        if (ModelState.IsValid)
-        // ModelState ile olusturulan obj'nin tamamiyla valid oldugunu kontrol edebiliyoruz.
-        {
-            ProductRepository.AddProduct(p);
-            return RedirectToAction("list");
-        }
-        return View(p);
+        // if (ModelState.IsValid)
+        // // ModelState ile olusturulan obj'nin tamamiyla valid oldugunu kontrol edebiliyoruz.
+        // {
+        //     ProductRepository.AddProduct(p);
+        //     return RedirectToAction("list");
+        // }
+        return View();
     }
 
     [HttpGet]
     [Route("product/edit")]
     public IActionResult Edit(int id)
     {
-        ViewBag.Categories = new SelectList(CategoryRepository.Categories, "Categories");
+        // ViewBag.Categories = new SelectList(CategoryRepository.Categories, "Categories");
 
-        return View(ProductRepository.GetProductById(id));
+        // return View(ProductRepository.GetProductById(id));
+        return RedirectToAction("list");
+
     }
 
     [HttpPost]
     [Route("product/edit")]
     public IActionResult Edit(Product p)
     {
-        ProductRepository.EditProduct(p);
+        // ProductRepository.EditProduct(p);
         return RedirectToAction("list");
     }
 
     [HttpPost]
     public IActionResult Delete(Product p)
     {
-        ProductRepository.DeleteProduct(p);
+        // ProductRepository.DeleteProduct(p);
         return RedirectToAction("list");
     }
 
@@ -111,5 +113,6 @@ public class ProductController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+
     }
 }

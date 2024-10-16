@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using shopapp.data.Abstract;
-using shopapp.webui.Data;
 using shopapp.webui.Models;
 using System.Diagnostics;
 
@@ -18,16 +17,16 @@ public class HomeController : Controller
     // Simdi otomatik olarak gelecek ancak bos su anda bunu cozmek icin 
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+    // public HomeController(ILogger<HomeController> logger)
+    // {
+    //     _logger = logger;
+    // }
 
     public IActionResult Index()
     {
         var productViewModel = new ProductViewModel()
         {
-            Products = ProductRepository.Products
+            Products = _productRepository.GetAll()
         };
 
         return View(productViewModel);
