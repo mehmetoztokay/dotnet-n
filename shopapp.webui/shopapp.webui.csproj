@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\shopapp.data\shopapp.data.csproj" />
+    <ProjectReference Include="..\shopapp.business\shopapp.business.csproj" />
   </ItemGroup>
 
    <ItemGroup>

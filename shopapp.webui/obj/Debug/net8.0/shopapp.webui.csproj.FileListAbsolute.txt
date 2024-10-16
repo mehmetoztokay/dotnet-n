@@ -230,3 +230,5 @@ C:/plans/education/software/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/re
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/shopapp.webui.csproj.AssemblyReference.cache
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/shopapp.webui.sourcelink.json
 /Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/obj/Debug/net8.0/shopapp..C5904165.Up2Date
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/bin/Debug/net8.0/shopapp.business.dll
+/Users/mehmetoztokay/Documents/Works/Yazılım/dotnet/mvc/shopapp/shopapp.webui/bin/Debug/net8.0/shopapp.business.pdb

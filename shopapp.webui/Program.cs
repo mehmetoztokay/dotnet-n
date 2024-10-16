@@ -1,3 +1,4 @@
+using shopapp.business.Concrete;
 using shopapp.data.Abstract;
 using shopapp.data.Concrete.EFCore;
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IProductRepository, EFCoreProductRepository>();
 // IProductRepository cagirildiginda EFCoreProductRepository gondermek istedigimizi soyledik.
+builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using shopapp.business.Concrete;
 using shopapp.data.Abstract;
 using shopapp.webui.Models;
 using System.Diagnostics;
@@ -8,10 +9,10 @@ namespace shopapp.webui.Controllers;
 public class HomeController : Controller
 {
     // Bu iki kod parcacagi arasinda
-    private IProductRepository _productRepository;
-    public HomeController(IProductRepository productRepository)
+    private IProductService _productService;
+    public HomeController(IProductService productService)
     {
-        this._productRepository = productRepository;
+        this._productService = productService;
     }
     // Dependency Injection yapmis olduk
     // Simdi otomatik olarak gelecek ancak bos su anda bunu cozmek icin 
@@ -26,7 +27,7 @@ public class HomeController : Controller
     {
         var productViewModel = new ProductViewModel()
         {
-            Products = _productRepository.GetAll()
+            Products = _productService.GetAll()
         };
 
         return View(productViewModel);
