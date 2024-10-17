@@ -20,6 +20,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+if (app.Environment.IsDevelopment())
+{
+    SeedDatabase.Seed();
+
+}
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
